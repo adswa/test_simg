@@ -7,5 +7,5 @@ set -e
 docker run --rm kaczmarj/neurodocker:master generate singularity \
 --base neurodebian:stretch-non-free \
 --pkg-manager apt \
---install python-sklearn python-seaborn python-pandas datalad \
+--install python3-sklearn python3-seaborn python3-pandas datalad \
 > envs/Singularity.1
