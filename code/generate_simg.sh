@@ -6,9 +6,6 @@ set -e
 
 docker run --rm kaczmarj/neurodocker:master generate singularity \
 --base neurodebian:stretch-non-free \
---install datalad \
 --pkg-manager apt \
---miniconda create_env=python \
-            conda_install="python=3.7 traits" \
-            pip_install="seaborn pandas datalad sklearn" \
+--install datalad python3-tk python3-pandas python3-sklearn python3-seaborn \
 > envs/Singularity.1.1
