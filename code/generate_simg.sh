@@ -6,6 +6,7 @@ set -e
 
 docker run --rm kaczmarj/neurodocker:master generate singularity \
 --base neurodebian:stretch-non-free \
+--install datalad \
 --pkg-manager apt \
 --miniconda create_env=python \
             conda_install="python=3.7 traits" \
