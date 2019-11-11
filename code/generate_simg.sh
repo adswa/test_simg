@@ -9,5 +9,5 @@ docker run --rm kaczmarj/neurodocker:master generate singularity \
 --pkg-manager apt \
 --miniconda create_env=python \
             conda_install="python=3.7 traits" \
-            pip_install="seaborn, pandas, datalad, sklearn" \
+            pip_install="seaborn pandas datalad sklearn" \
 > envs/Singularity.1.1
